@@ -18,12 +18,14 @@
 }
 .products-item {
   display: flex;
+  align-items: center;
+  padding-bottom: 60px;
 }
 .header-title {
   margin: 0;
   font-family: "Seymour One";
   font-style: normal;
-  font-weight: 900;
+  font-weight: 400;
   font-size: 38px;
   line-height: 48px;
   letter-spacing: 0.04em;
@@ -36,17 +38,17 @@
   color: #fcfcfc;
 }
 .ice-icon {
-  padding-bottom: 60px;
+  margin-right: 16px;
 }
 .ice-icon-big {
   filter: drop-shadow(16px 16px 100px white);
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 17px;
+  right: 93px;
 }
 .title-list {
   position: absolute;
-  top: 0;
+  top: 70px;
   right: 0;
 }
 .product-title {
