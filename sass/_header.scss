@@ -21,7 +21,10 @@ li {
   padding-right: 16px;
 }
 
-.container {
+.box-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 1200px;
   margin: 0 auto;
 }
