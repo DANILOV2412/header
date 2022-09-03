@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header class="header-page">
+    <!-- <header class="header-page">
       <div class="container box-header">
         <a href="./index.html"
-          ><img class="logo-img" src="./sass/img/Logo.png" alt="logo"
+          ><img class="logo-img" src="./img/Logo.png" alt="logo"
         /></a>
         <nav class="navi">
           <ul class="navi__list">
@@ -32,26 +32,45 @@
             </li>
           </ul>
         </nav>
-        <button class="button" type="button">Buy now</button>
+        <button class="button" type="button">Buy now &#10095;</button>
       </div>
-    </header>
+    </header> -->
 
     <section class="products">
       <div class="container box-product">
-        <h1 class="header-title">ice cream made with passion</h1>
+        <h1 class="header-title">
+          ice cream made with <span class="sub">passion</span>
+        </h1>
         <button type="button" class="button-products">Products</button>
         <button type="button" class="button-made">How it’s made?</button>
 
         <ul class="products-list">
           <li class="products-item">
-            <img class="ice-icon" src="./sass/img/ice1.png" alt="ice1" />
+            <img
+              class="ice-icon"
+              srcset="/img/ice.desctop.png 455w, /img/ice.tablet.png 270w"
+              sizes="(min-width: 1200px) 455px, (min-width: 768px) 270px"
+              src="./img/main.ice.desctop.png"
+              alt="ice"
+            />
             <p class="product-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et
             </p>
           </li>
           <li class="ice-icon-big">
-            <img src="./sass/img/Main ice cream.png" alt="ice2" />
+            <img
+              class="main-ice"
+              srcset="
+                /img/main.ice.desctop.png 455w,
+                /img/main.ice.tablet.png  270w,
+                /img/main.ice.mob.png     170w
+              "
+              sizes="(min-width: 1200px) 455px, (min-width: 768px) 270px,
+              (min-width: 320px) 170px"
+              src="./img/main.ice.desctop.png"
+              alt="main.ice"
+            />
           </li>
           <li class="title-list">
             <p class="product-title">
