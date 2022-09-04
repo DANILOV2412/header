@@ -36,51 +36,47 @@
       </div>
     </header> -->
 
-    <section class="products">
-      <div class="container box-product">
-        <h1 class="header-title">
-          ice cream made with <span class="sub">passion</span>
+    <section class="hero">
+      <div class="container box-hero">
+        <h1 class="hero__big-title">
+          ice cream made with <span class="hero__sub">passion</span>
         </h1>
-        <button type="button" class="button-products">Products</button>
-        <button type="button" class="button-made">How it’s made?</button>
+        <div class="hero__link-block">
+          <a href="#products" class="button-hero">Products</a>
+          <a href="#advantages" class="button-made">How it’s made?</a>
+        </div>
 
-        <ul class="products-list">
-          <li class="products-item">
-            <img
-              class="ice-icon"
-              srcset="/img/ice.desctop.png 455w, /img/ice.tablet.png 270w"
-              sizes="(min-width: 1200px) 455px, (min-width: 768px) 270px"
-              src="./img/ice.tablet.png"
-              alt="ice"
-            />
-            <p class="product-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et
-            </p>
-          </li>
-          <li class="ice-icon-big">
-            <img
-              class="main-ice"
-              srcset="
-                /img/main.ice.desctop.png 455w,
-                /img/main.ice.tablet.png  270w,
-                /img/main.ice.mob.png     170w
-              "
-              sizes="(min-width: 1200px) 455px, (min-width: 768px) 270px,
+        <div class="hero__block">
+          <img
+            class="hero__icon"
+            srcset="/img/ice.desctop.png 455w, /img/ice.tablet.png 270w"
+            sizes="(min-width: 1200px) 455px, (min-width: 768px) 270px"
+            src="./img/ice.tablet.png"
+            alt="ice"
+          />
+          <p class="hero__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et
+          </p>
+        </div>
+        <div class="hero__block-main">
+          <img
+            class="hero__main-ice"
+            srcset="
+              /img/main.ice.desctop.png 455w,
+              /img/main.ice.tablet.png  270w,
+              /img/main.ice.mob.png     170w
+            "
+            sizes="(min-width: 1200px) 455px, (min-width: 768px) 270px,
               (min-width: 320px) 170px"
-              src="./img/main.ice.mob.png"
-              alt="main.ice"
-            />
-          </li>
-          <li class="title-list">
-            <p class="product-title">
-              16<span class="product-sub-title">Cafe</span>
-            </p>
-            <p class="product-title">
-              23<span class="product-sub-title">food trucks</span>
-            </p>
-          </li>
-        </ul>
+            src="./img/main.ice.mob.png"
+            alt="main.ice"
+          />
+          <p class="hero__title">16<span class="hero__sub-title">Cafe</span></p>
+          <p class="hero__title-b">
+            23<span class="hero__sub-title-b">food trucks</span>
+          </p>
+        </div>
       </div>
     </section>
   </body>
