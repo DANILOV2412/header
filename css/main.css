@@ -70,6 +70,38 @@ body {
   margin: 0;
 }
 
+.hero__icon {
+  animation: bounce 3s ease;
+  animation-timing-function: initial;
+}
+
+@keyframes bounce {
+  0% {
+    transform: rotate(0);
+    transform-origin: top right;
+    animation-timing-function: ease-in-out;
+  }
+  60% {
+    transform: rotate(60deg);
+    transform-origin: top left;
+    animation-timing-function: ease-in-out;
+  }
+  40% {
+    transform: rotate(80deg);
+    transform-origin: top left;
+    animation-timing-function: ease-in-out;
+  }
+  80% {
+    transform: rotate(80deg) translateY(0);
+    opacity: 1;
+    transform-origin: top left;
+    animation-timing-function: ease-in-out;
+  }
+  100% {
+    transform: translateY(700px);
+    opacity: 0;
+  }
+}
 .hero__main-ice {
   display: block;
   position: absolute;
@@ -238,6 +270,35 @@ body {
     filter: drop-shadow(16px 16px 80px white);
     bottom: 0;
     right: 110px;
+    animation: bounce1 3s ease;
+    animation-timing-function: initial;
+  }
+  @keyframes bounce1 {
+    0% {
+      transform: rotate(0);
+      transform-origin: top right;
+      animation-timing-function: ease-in-out;
+    }
+    60% {
+      transform: rotate(360deg);
+      transform-origin: top right;
+      animation-timing-function: ease-in-out;
+    }
+    40% {
+      transform: rotate(360deg);
+      transform-origin: top right;
+      animation-timing-function: ease-in-out;
+    }
+    80% {
+      transform: rotate(360deg) translateY(0);
+      opacity: 1;
+      transform-origin: top right;
+      animation-timing-function: ease-in-out;
+    }
+    100% {
+      transform: translateY(700px);
+      opacity: 0;
+    }
   }
   .hero__icon {
     position: absolute;
@@ -394,11 +455,35 @@ body {
     position: absolute;
     bottom: 65px;
     left: 20px;
+    animation: bounce 3s ease;
+    animation-timing-function: initial;
   }
-  .hero__main-ice {
-    filter: drop-shadow(16px 16px 80px white);
-    top: 0;
-    right: 92px;
+  @keyframes bounce {
+    0% {
+      transform: rotate(0);
+      transform-origin: top left;
+      animation-timing-function: ease-in-out;
+    }
+    20%, 60% {
+      transform: rotate(80deg);
+      transform-origin: top left;
+      animation-timing-function: ease-in-out;
+    }
+    40% {
+      transform: rotate(60deg);
+      transform-origin: top left;
+      animation-timing-function: ease-in-out;
+    }
+    80% {
+      transform: rotate(60deg) translateY(0);
+      opacity: 1;
+      transform-origin: top left;
+      animation-timing-function: ease-in-out;
+    }
+    100% {
+      transform: translateY(700px);
+      opacity: 0;
+    }
   }
   .hero__text::before {
     content: "";
